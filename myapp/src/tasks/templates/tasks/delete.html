@@ -1,0 +1,12 @@
+<p>Are you sure you want to delete "{{item}}"?
+    <br>You won't be able to undo this action 
+</p>
+
+<a href="{%url 'list' %}" > Cancel</a>
+
+<form method="POST" action=""> 
+    {% csrf_token %}
+    
+    <!--{{form}}-->
+    <input type="submit" value="delete" name="Confirm">
+</form>
